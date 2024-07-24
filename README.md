@@ -8,8 +8,9 @@ Made with PHP, MySQL and CodeIgnter 4 Framework (Version 4.2.10).
 
 
 ![mfinans img 1](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot01.JPG?raw=true)
-![mfinans img 1](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot02.JPG?raw=true)
-![mfinans img 2](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot03.JPG?raw=true)
-![mfinans img 3](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot04.JPG?raw=true)
-![mfinans img 2](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot05.JPG?raw=true)
-![mfinans img 3](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot06.JPG?raw=true)
+![mfinans img 2](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot02.JPG?raw=true)
+![mfinans img 3](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot03.JPG?raw=true)
+![mfinans img 4](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot04.JPG?raw=true)
+![mfinans img 5](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot05.JPG?raw=true)
+![mfinans img 6](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot06.JPG?raw=true)
+![mfinans img 7](https://github.com/rgstech/clickfinans/blob/master/screenshots/screenshot07.JPG?raw=true)
