@@ -66,22 +66,5 @@ class UserModel extends Model
     }
 
 
-    // public function getAllByKeyword(string $keyword) : array
-    // {
-
-    //     $builder = $this->builder('tbusuario');
-
-    //     $res     =  $builder->select('usu_pk_id as uid,usu_nome as nome, usu_email as email, 
-    //                                   usu_tel as tel, usu_img as img, 
-    //                                   usu_dt_cad as cad, usu_sexo as sexo, usu_bio as bio  ')
-    //                         ->like('usu_nome', $keyword)
-    //                         ->get()
-    //                         ->getResult();
-
-       
-    //     return $res;
-      
-    // }
-
     
 }
