@@ -1,5 +1,13 @@
 <?php
+/* 
 
+#Script desenvolvido por/Developed by Rodrigo Guimaraes
+#Github: github.com/rgstech
+#Clickfinans Controle de despesas minimalista / Minimalist Expense Control  
+#Made and tested with codeigniter framework version: 4.2.10 
+#License: GPL V2
+
+*/
 namespace App\Controllers;
 
 use App\Models\ExpenseModel;
