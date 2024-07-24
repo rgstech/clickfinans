@@ -1,0 +1,62 @@
+ERROR - 2023-01-10 12:31:17 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`clickfinans`.`despesa`, CONSTRAINT `categoria_fk` FOREIGN KEY (`categoria_fk`) REFERENCES `categoria` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) in D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ca...', 0)
+#1 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ca...')
+#2 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ca...')
+#3 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ca...', Array, false)
+#4 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\servers\xampp\htdocs\ci4-apps\clickfinans\app\Controllers\Category.php(77): CodeIgniter\BaseModel->delete(Array)
+#7 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(927): App\Controllers\Category->delete(3)
+#8 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#9 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\servers\xampp\htdocs\ci4-apps\clickfinans\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-10 12:31:17 --> Cannot delete or update a parent row: a foreign key constraint fails (`clickfinans`.`despesa`, CONSTRAINT `categoria_fk` FOREIGN KEY (`categoria_fk`) REFERENCES `categoria` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `categoria`
+WHERE `id` IN (3)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `categoria`
+WHERE `id` IN (3)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `categoria`
+WHERE `id` IN (3)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `categoria`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Category.php(77): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->delete(3)
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-10 19:33:39 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`clickfinans`.`categoria`, CONSTRAINT `cat_usuario_fk` FOREIGN KEY (`cat_usuario_fk`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `us...', 0)
+#1 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\servers\xampp\htdocs\ci4-apps\clickfinans\app\Controllers\Profile.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(927): App\Controllers\Profile->delete()
+#8 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#9 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\servers\xampp\htdocs\ci4-apps\clickfinans\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-10 19:33:39 --> Cannot delete or update a parent row: a foreign key constraint fails (`clickfinans`.`categoria`, CONSTRAINT `cat_usuario_fk` FOREIGN KEY (`cat_usuario_fk`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `usuario`
+WHERE `id` IN (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `usuario`
+WHERE `id` IN (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `usuario`
+WHERE `id` IN (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `usuario`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Profile.php(63): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Profile->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,30 @@
+CRITICAL - 2022-12-15 19:42:06 --> syntax error, unexpected token ";"
+in APPPATH\Views\layouts\main_layout.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/layouts/main_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/showall', [], true)
+ 4 APPPATH\Controllers\Expense.php(35): view('expense/showall', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 19:47:16 --> syntax error, unexpected token ";"
+in APPPATH\Views\layouts\main_layout.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/layouts/main_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/showall', [], true)
+ 4 APPPATH\Controllers\Expense.php(35): view('expense/showall', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 19:47:28 --> syntax error, unexpected token ";"
+in APPPATH\Views\layouts\main_layout.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/layouts/main_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/showall', [], true)
+ 4 APPPATH\Controllers\Expense.php(35): view('expense/showall', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

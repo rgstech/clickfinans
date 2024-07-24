@@ -1,0 +1,39 @@
+ERROR - 2022-11-07 19:35:09 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\servers\xampp\htdocs\ci4-apps\clickfinans\app\Models\ExpenseModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\servers\xampp\htdocs\ci4-apps\clickfinans\app\Controllers\Home.php(20): App\Models\ExpenseModel->getById('1')
+#6 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(927): App\Controllers\Home->teste()
+#7 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\servers\xampp\htdocs\ci4-apps\clickfinans\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\servers\xampp\htdocs\ci4-apps\clickfinans\app\Models\ExpenseModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\servers\xampp\htdocs\ci4-apps\clickfinans\app\Controllers\Home.php(20): App\Models\ExpenseModel->getById('1')
+#5 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(927): App\Controllers\Home->teste()
+#6 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\servers\xampp\htdocs\ci4-apps\clickfinans\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\servers\xampp\htdocs\ci4-apps\clickfinans\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 19:35:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `despesa`
+WHERE `id` = :id:', [...], false)
+ 3 APPPATH\Models\ExpenseModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(20): App\Models\ExpenseModel->getById('1')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->teste()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

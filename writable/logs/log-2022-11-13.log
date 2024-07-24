@@ -1,0 +1,5 @@
+CRITICAL - 2022-11-13 15:38:01 --> Class "Home" not found
+in SYSTEMPATH\CodeIgniter.php on line 889.
+ 1 SYSTEMPATH\CodeIgniter.php(956): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

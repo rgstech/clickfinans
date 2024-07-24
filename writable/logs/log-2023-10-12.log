@@ -1,0 +1,7 @@
+CRITICAL - 2023-10-12 10:43:50 --> Undefined array key "category"
+in APPPATH\Controllers\Expense.php on line 66.
+ 1 APPPATH\Controllers\Expense.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'APPPATH\\Controllers\\Expense.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->show()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

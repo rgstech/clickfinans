@@ -1,0 +1,39 @@
+CRITICAL - 2022-12-18 09:55:30 --> Undefined property: App\Controllers\Expense::$expenseViewModell
+in APPPATH\Controllers\Expense.php on line 33.
+ 1 APPPATH\Controllers\Expense.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Expense::$expenseViewModell', 'APPPATH\\Controllers\\Expense.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 09:57:16 --> Cannot use object of type stdClass as array
+in APPPATH\Views\expense\exp_control.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/exp_control', [], true)
+ 4 APPPATH\Controllers\Expense.php(39): view('expense/exp_control', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 09:57:56 --> Cannot use object of type stdClass as array
+in APPPATH\Views\expense\exp_control.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/exp_control', [], true)
+ 4 APPPATH\Controllers\Expense.php(39): view('expense/exp_control', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-18 09:58:22 --> Failed to parse time string (mercado) at position 0 (m): The timezone could not be found in the database
+in APPPATH\Helpers\mutil_helper.php on line 45.
+ 1 APPPATH\Helpers\mutil_helper.php(45): DateTime->__construct('mercado')
+ 2 APPPATH\Views\expense\exp_control.php(27): formatDate('mercado')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\expense\\exp_control.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/exp_control', [], true)
+ 6 APPPATH\Controllers\Expense.php(39): view('expense/exp_control', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,33 @@
+CRITICAL - 2023-01-03 19:05:19 --> Undefined variable $userData
+in APPPATH\Views\profile\profile_main.php on line 10.
+ 1 APPPATH\Views\profile\profile_main.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'APPPATH\\Views\\profile\\profile_main.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profile\\profile_main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('profile/profile_main', [], true)
+ 5 APPPATH\Controllers\Profile.php(15): view('profile/profile_main')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Profile->show()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-03 19:05:21 --> Undefined variable $userData
+in APPPATH\Views\profile\profile_main.php on line 10.
+ 1 APPPATH\Views\profile\profile_main.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'APPPATH\\Views\\profile\\profile_main.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profile\\profile_main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('profile/profile_main', [], true)
+ 5 APPPATH\Controllers\Profile.php(15): view('profile/profile_main')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Profile->show()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-03 19:35:46 --> Undefined array key "usu_email"
+in APPPATH\Views\profile\profile_main.php on line 19.
+ 1 APPPATH\Views\profile\profile_main.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usu_email"', 'APPPATH\\Views\\profile\\profile_main.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profile\\profile_main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('profile/profile_main', [], true)
+ 5 APPPATH\Controllers\Profile.php(29): view('profile/profile_main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Profile->show()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

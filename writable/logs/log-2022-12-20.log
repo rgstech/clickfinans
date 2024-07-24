@@ -1,0 +1,21 @@
+CRITICAL - 2022-12-20 20:52:08 --> Call to undefined function form_open()
+in APPPATH\Views\expense\exp_add_edit.php on line 13.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/exp_add_edit', [], true)
+ 4 APPPATH\Controllers\Expense.php(57): view('expense/exp_add_edit')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->new()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 20:52:49 --> Undefined variable $comment
+in APPPATH\Views\expense\exp_add_edit.php on line 31.
+ 1 APPPATH\Views\expense\exp_add_edit.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comment', 'APPPATH\\Views\\expense\\exp_add_edit.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\expense\\exp_add_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/exp_add_edit', [], true)
+ 5 APPPATH\Controllers\Expense.php(57): view('expense/exp_add_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->new()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

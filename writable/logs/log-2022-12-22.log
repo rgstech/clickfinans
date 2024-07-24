@@ -1,0 +1,25 @@
+CRITICAL - 2022-12-22 08:54:59 --> Unclosed '{' on line 57
+in APPPATH\Views\expense\exp_add_edit.php on line 76.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/exp_add_edit', [], true)
+ 3 APPPATH\Controllers\Expense.php(61): view('expense/exp_add_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->new()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 08:55:03 --> Unclosed '{' on line 57
+in APPPATH\Views\expense\exp_add_edit.php on line 76.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/exp_add_edit', [], true)
+ 3 APPPATH\Controllers\Expense.php(61): view('expense/exp_add_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->new()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 09:06:26 --> Unclosed '{' on line 39
+in APPPATH\Helpers\mutil_helper.php on line 69.
+ 1 APPPATH\Controllers\Home.php(21): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

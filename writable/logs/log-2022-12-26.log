@@ -1,0 +1,27 @@
+CRITICAL - 2022-12-26 11:30:35 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Helpers\mutil_helper.php on line 77.
+ 1 SYSTEMPATH\Controller.php(85): helper([...])
+ 2 APPPATH\Controllers\BaseController.php(48): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 11:32:31 --> Undefined variable $data
+in APPPATH\Helpers\mutil_helper.php on line 77.
+ 1 APPPATH\Helpers\mutil_helper.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Helpers\\mutil_helper.php', 77)
+ 2 APPPATH\Controllers\Expense.php(163): formatMoneyToDb('3,49')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->save()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 18:34:21 --> Array to string conversion
+in APPPATH\Views\teste.php on line 9.
+ 1 APPPATH\Views\teste.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\teste.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\teste.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('teste', [], true)
+ 5 APPPATH\Controllers\Home.php(77): view('teste', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->teste()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

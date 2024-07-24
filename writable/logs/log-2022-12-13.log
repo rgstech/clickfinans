@@ -1,0 +1,27 @@
+CRITICAL - 2022-12-13 18:21:54 --> Unclosed '{' on line 22
+in APPPATH\Views\expense\showall.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/showall', [], true)
+ 3 APPPATH\Controllers\Expense.php(33): view('expense/showall', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 18:21:55 --> Unclosed '{' on line 22
+in APPPATH\Views\expense\showall.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/showall', [], true)
+ 3 APPPATH\Controllers\Expense.php(33): view('expense/showall', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 18:22:11 --> Unclosed '{' on line 22
+in APPPATH\Views\expense\showall.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('expense/showall', [], true)
+ 3 APPPATH\Controllers\Expense.php(33): view('expense/showall', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Expense->showExpenses()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Expense))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

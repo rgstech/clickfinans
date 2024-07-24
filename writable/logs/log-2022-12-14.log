@@ -1,0 +1,3 @@
+CRITICAL - 2022-12-14 14:05:14 --> Cannot use [] for reading
+in APPPATH\Views\expense\showall.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

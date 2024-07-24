@@ -1,0 +1,29 @@
+CRITICAL - 2023-01-06 11:44:10 --> Unmatched '}'
+in APPPATH\Controllers\Account.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 APPPATH\Controllers\Profile.php(20): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Profile->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 19:11:10 --> Invalid file: profile/edit.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile/edit.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('profile/edit', [], true)
+ 3 APPPATH\Controllers\Profile.php(100): view('profile/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Profile->update()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 19:13:29 --> Undefined variable $userData
+in APPPATH\Views\profile\profile_edit.php on line 33.
+ 1 APPPATH\Views\profile\profile_edit.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'APPPATH\\Views\\profile\\profile_edit.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profile\\profile_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('profile/profile_edit', [], true)
+ 5 APPPATH\Controllers\Profile.php(100): view('profile/profile_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Profile->update()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

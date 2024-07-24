@@ -1,0 +1,288 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*, ::before, ::after {
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  /* border: 1px solid rgb(0, 12, 185);  */
+}
+
+html, body { 
+
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   /* background-color: whitesmoke; */
+   /* font-family: "Open Sans", sans-serif; */
+   font-family: 'Poppins', sans-serif;
+/* background: linear-gradient(to right, rgb(22, 34, 42), rgb(58, 96, 115)); */
+   background: linear-gradient(to right, #08203e, #557c93);
+
+   color: #fff;
+   font-family: "Open Sans", sans-serif;
+   font-size: 16px;
+   text-rendering: optimizeLegibility !important;
+   -webkit-font-smoothing: antialiased !important;
+   scroll-behavior: smooth;
+
+}
+
+body hr {
+
+  /* height: 1px; */
+  background-color: rgba(245, 245, 245, 0.199);
+
+}
+
+
+header {
+
+  margin-bottom: 15px;
+}
+
+
+.painel {
+ 
+  width: 95%;
+  height: 500px;
+  background-color: inherit;
+  /* border: 1px solid rgb(10, 75, 216); */
+  border-radius: 15px;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: auto;
+
+}
+ 
+.painel-card {
+
+  /* background-color: rgb(114, 166, 211); */
+
+  color: rgb(25, 38, 153);
+
+/*  border-right: 5px solid rgb(62, 57, 107);
+    border: 5px solid rgb(62, 57, 107); */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 10px solid rgb(62, 141, 62);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    width: 320px;
+    height: 210px;
+    border-radius: 12px;
+    padding: 50px;
+    padding-top: 60px;
+ /* background-color: #FFF; */
+    background-color: #8bca8d;
+
+}
+
+.painel-card hr {
+
+  background-color: rgb(177, 219, 177);
+  height: 1px;
+
+}
+
+.painel-card h4 { 
+
+  font-weight:bold;
+  font-size: 1.5rem;
+
+}
+
+.painel-card h5 { 
+   
+  font-weight:bolder;
+  font-size: 2.0rem;
+  
+}
+
+.painel-card h6 {
+
+  color: #9d2dac;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.painel-card-bottom { /* refatorar com painel-card, ver pontos em comum*/
+
+    /* background-color: rgb(114, 166, 211); */
+    color: rgb(25, 38, 153);
+    /* border-right: 5px solid rgb(62, 57, 107);
+      border: 5px solid rgb(62, 57, 107); */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 10px solid rgb(62, 141, 62);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    width: 70%;
+    height: 210px;
+    border-radius: 12px;
+    padding: 50px;
+    padding-top: 25px;
+    /* background-color: #FFF; */
+    background-color: #8bca8d;
+}
+
+.painel-card-bottom h4 {
+
+  text-align: center;
+  margin: 1px auto;
+  font-weight:bold;
+  font-size: 1.5rem;
+
+}
+
+.painel-card-bottom hr {
+
+  background-color: rgb(177, 219, 177);
+  height: 1px;
+
+}
+
+.painel-card-bottom p {
+ 
+  color:#9d2dac;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: 600;
+  font-size: 1.1rem;
+ 
+}
+
+footer {
+
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  /* border: 1px solid blue; */
+
+}
+
+#exptable {
+
+  color:#fff;
+  
+}
+
+@media (max-width: 848px) { 
+  
+  .painel-card { 
+
+    width: 280px;
+    
+  }
+
+
+}
+/* .painel-card-month {
+
+    background-color: #FFF;
+
+  }
+
+  .painel-card-week {
+    background-color: #FFF;
+  }
+  .painel-card-day {
+
+    background-color: #FFF;
+
+  } */
+
+/* css paginação */
+
+ul.pagination li {
+
+  display: inline;
+  border-radius: 5px;
+  margin-left: 1px;
+
+}
+
+ul.pagination li a {
+
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-left: 1px;
+  
+}
+
+ul.pagination > li.active {
+
+  background-color: #4caf50;
+  color: white;
+
+}
+
+ul.pagination li a:hover:not(.active) {
+
+  background-color: #ddd;
+  border-radius: 5px;
+
+}
+
+h3.title-page {
+
+ margin: 5px auto;
+ text-align: center;
+ margin-top: 25px;
+ margin-bottom: 50px;
+font-size: 1.5rem;
+
+}
+
+.profile-main {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid rgb(0, 60, 255);
+  margin-top: 15%;
+  margin-bottom: 12%;
+  height: 320px;
+  
+
+}
+
+
+.profile-main img {
+
+ border: 1px solid rgb(177, 219, 177);
+ border-radius: 15px;
+ width: 180px;
+ height: 180px;
+
+}
+
+.details {
+  border-left: 1px solid rgb(177, 219, 177);
+  padding-left: 50px;
+}
+
+.alert-box { /* estilo complementar para caixas de alertas */
+ 
+ width: 40%;
+ height: 80px;
+ margin: 15px auto;
+ padding-bottom: 15px;
+
+}
+
+.alert-box h3 { /* nao funfa */
+
+  margin-bottom: 15px;
+} 
